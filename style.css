@@ -1,0 +1,32 @@
+body{
+font-size: 30px;
+color: darkred;
+font-family:Finlandica Headline;
+}
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 20px 30px;
+}
+.product-card{
+    background-color: rgba(216, 159, 90, 0.473);
+    outline: 2px double rgba(190, 83, 11, 0.473);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    transform:  250ms ease;
+    transition:  250ms ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.product-card:nth-child(1){
+  grid-column: span 2 ;
+}
+.product-card:nth-child(1)::before{
+    display: block;
+   content: "Хіт продажів"; 
+}
+.product-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(31, 18, 2, 0.432);
+}
