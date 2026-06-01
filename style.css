@@ -2,6 +2,7 @@ body{
 font-size: 30px;
 color: darkred;
 font-family:Finlandica Headline;
+margin: 0 auto;
 }
 .wrap{
     display: grid;
@@ -14,6 +15,8 @@ font-family:Finlandica Headline;
     outline: 2px double rgba(190, 83, 11, 0.473);
     padding-bottom: 20px;
     padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     position: relative;
     transform:  250ms ease;
     transition:  250ms ease;
@@ -29,4 +32,8 @@ font-family:Finlandica Headline;
 .product-card:hover{
   transform: translateY(-6px);
   box-shadow: 0 16px 40px rgba(31, 18, 2, 0.432);
+}
+.action-btn{
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(81, 243, 81, 0.384);
 }
